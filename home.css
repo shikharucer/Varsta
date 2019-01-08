@@ -1,0 +1,57 @@
+.header
+{
+	width: 100%;
+	height: 200px;
+	background-color: darkcyan;
+        
+}
+
+.navbar1
+{       width: 100%;
+        height: 150px;
+	position: fixed;
+        background-color: darkcyan;
+	z-index:2;
+}
+.navbar1 p{
+    font-size: 30px;
+    font-family: Segoe Script;
+}
+#input
+{
+    margin-left: 800px;
+    margin-right: 0px;
+    margin-top: 2px;
+}
+.middle
+{
+    height:auto;
+    width: 98%;
+    background-color:wheat;
+    margin-bottom: 5%;
+    margin-top:10%;
+    margin-left:1%; 
+    z-index: 0;
+}
+.footer1{
+    background-color:black;
+    height: 190px;
+    width:100%;
+    margin-top:10px;
+    margin-bottom: 5px;
+}
+.footer1 ul li a
+{  
+    color:white;
+    text-decoration: none;
+}
+.footer1 ul li a:hover
+{
+    color:cyan;
+    text-decoration: none;
+}
+.footer1 p{
+    color:white;
+    padding: 1px;
+    margin-left: 0px;
+}

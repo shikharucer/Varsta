@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>Verfication</title>
+</head>
+<style>
+
+ body{
+   background-image:url(buy.jpg);
+   height:100vh;
+   background-size:cover;
+   background-position:center;
+   }
+  .login-page{
+   width:500px;
+   padding:10% 0 0;
+   margin:auto;
+   }
+  .form{
+   position:relative;
+   z-index:1;
+   background:rgba(193,202,189,0.2);
+   max-width:500px;
+   margin:0 auto 100px;
+   padding:45px;
+   text-align:center;
+   }
+  .form input{
+   font-family:"Roboto",sans-serif;
+   outline:1;
+   background:#f2f2f2;
+   width:100%;
+   border:0;
+   margin:0 0 15px;
+   padding:15px;
+   box-sizing:border-box;
+   font-size:14px;
+   }
+  .form button{
+   font-family:"Roboto",sans-serif;
+   text-transition:uppercase;
+   outline:0;
+   background:#DC143C;
+   width:100%;
+   border:0;
+   padding:15px;
+   color:#ffffff;
+   font-size:14px;
+   cursor:pointer;
+   }
+  .form button:hover,.form button:active{
+   background:#8B0000;
+   }
+  .form .message{
+   margin:15px 0 0;
+   color: firebrick;
+   font-size:12px;
+   }
+  .form .message a
+   {
+   color:#8B0000;
+   text-decoration:none;
+   }
+  /* .form .register-form
+   {
+   display:none;
+   }*/
+   
+   </style>
+   <script language="javascript">
+   
+   <script src="//code.jquery.com/jquery-3.3.1.min.js">
+  
+  $('.message a').click(function(){
+  $('form').animate({height:"toggle",opacity:"toggle"},"slow");
+  });
+  </script>
+    
+</head>
+<body>
+<div class="login-page">
+  <div class="form">
+
+  <form class="login-form">
+  <input type="text" placeholder="User Name"/>
+  <input type="email" placeholder="Email-Id"/>
+   <input type="number" placeholder="Pincode"/>
+    <input type="address" placeholder="Address"/>
+	 <input type="text" placeholder="City"/>
+	  <input type="text" placeholder="State"/>
+  <button>BUY</button>
+  <p class="message">continue shopping? <a href="index1(2).html">HOME</a></p>
+  
+  
+  
+  </form>
+  </div>
+  </div>
+  
+</body>
+</html>

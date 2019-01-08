@@ -1,0 +1,167 @@
+
+<!--<%@page import="java.sql.*"%>-->
+<!doctype html>
+<html>
+<head>
+<title>REGISTER</title>
+
+
+
+<style>
+     body{
+   background-image:url(bags.jpg);
+   height:1000px;
+   width: 100%;
+   background-size:150%;
+   background-position:center;
+   }
+  
+   .login-page{
+   width:500px;
+   padding:10% 0 0;
+   margin:auto;
+   }
+   .form1{
+   position:relative;
+   z-index:1;
+   background:rgba(193,202,189,0.4);
+   max-width:360px;
+   margin:0 auto 100px;
+   padding:45px;
+   text-align:center;
+   }
+   .form1 input{
+   font-family:"Roboto",sans-serif;
+   outline:1;
+   background:#f2f2f2;
+   width:100%;
+   border:0;
+   margin:0 0 15px;
+   padding:15px;
+   box-sizing:border-box;
+   font-size:14px;
+   }
+   .form1 button{
+   font-family:"Roboto",sans-serif;
+   text-transition:uppercase;
+   outline:0;
+   background:#DC143C;
+   width:100%;
+   border:0;
+   padding:15px;
+   color:#ffffff;
+   font-size:14px;
+   cursor:pointer;
+   }
+   .form1 button:hover,.form button:active{
+   background:#8B0000;
+   }
+   .form1 .message{
+   margin:15px 0 0;
+   color: firebrick;
+   font-size:12px;
+   }
+   .form1 .message a
+   {
+   color:#8B0000;
+   text-decoration:none;
+   }
+  /* .form .register-form
+   {
+   display:none;
+   }*/
+
+</style>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  
+   <script src="angular/angular.min.js"> </script>
+  
+ 
+  
+ 
+  </script>
+  <script>
+ 
+
+
+</script>
+  
+</head>
+
+
+
+<body >
+ 
+ 
+   <!---  <jsp:include page="header.jsp"/>-->
+ 
+     <form method="POST" ng-app=" " action="#" name="myform" >
+  <div class="login-page">
+  <div class="form1">
+  <div class="register-form">
+  <input name="first" type="text" ng-model="first" placeholder="First Name" >
+  <span style="color:red;" ng-show="myform.first.$dirty && myform.first.$invalid" > It cannot be empty</span>
+  <input name="last" type="text" id="ln" placeholder="Last Name" >
+   <span ng-show="myform.first.$dirty && myform.first.$invalid" > It cannot be empty</span>
+  <input name="email" type="email" id="em" placeholder="Email-id" />
+   <span ng-show="myform.first.$dirty && myform.first.$invalid" > It cannot be empty</span>
+   <input name="user" type="text" id="un" placeholder="User Name" />
+    <span ng-show="myform.first.$dirty && myform.first.$invalid" > It cannot be empty</span>
+  <input name="pass" type="password" id="ps" placeholder="Password" />
+  <input  type="password" name="conp" placeholder="Confirm Password" />
+  <p>
+<input type="submit"
+ng-disabled="myForm.user.$dirty && myForm.user.$invalid ||  
+myForm.email.$dirty && myForm.email.$invalid">
+</p>
+
+     
+  <button name="b3">SUBMIT</button>  
+  
+<p class="message">Already Registered? <a href="login1.html">LOGIN</a></p>
+    </div></div></div>  
+
+    
+
+</form>
+
+ <!---
+<%  if(request.getParameter("b3")!=null)
+{
+    
+     Connection con;
+     Statement st;
+     String Email, Pass,First,Last,User;
+     Email=request.getParameter("email");
+     Pass=request.getParameter("pass");
+     User=request.getParameter("user");
+     First=request.getParameter("first");
+     Last=request.getParameter("last");
+    
+     try{  
+        
+        
+          Class.forName("com.mysql.jdbc.Driver");
+     	
+            		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/register","root","SHUKLA@myserver97");
+            		st=con.createStatement();
+                        String sql="insert into userdetails values('"+Email+"','"+Pass+"','"+User+"','"+First+"','"+Last+"')";
+                        int res=st.executeUpdate(sql);
+     
+        
+     }catch(Exception e)
+     {
+        out.println(e.toString());
+        
+     }
+     }
+%>-->
+        
+ 
+ 
+<!--<jsp:include page="footer.jsp"/>-->
+
+
+</body>
+</html>

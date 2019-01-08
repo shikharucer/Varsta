@@ -1,0 +1,22 @@
+.header
+{
+    width: 1320px;
+    height: 200px;
+    background-color: #80bdff;
+    
+}
+.middle
+{
+    margin-top: 20px;
+    width:1320px;
+    height: 700px;
+    background-color: #dae0e5;
+}
+
+.footer
+{   width:1320px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #000;
+}
